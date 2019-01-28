@@ -1,0 +1,17 @@
+extends ../layout.pug
+
+block content
+    h2 INFORMACIÓN DE USUARIOS
+    .row
+        .col-12
+            table.table
+                tr
+                    th Email
+                    th Username
+                    th Edad
+                    th Municipio
+                    th Provincia
+                    th Codigo Postal
+                    th curso
+                each us in arrUsuarios
+                    +filaUsuario(us)

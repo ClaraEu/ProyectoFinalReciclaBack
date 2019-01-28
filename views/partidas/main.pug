@@ -1,0 +1,14 @@
+extends ../layout.pug
+
+block content
+    h2 RANKING PARTIDAS
+    .row
+        .col-12
+            table.table
+                tr
+                    th Nick
+                    th Juego
+                    th Puntuación
+                    th Fecha
+                each par in arrPartidas
+                    +filaPartidas(par)
